@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8">
+    <title>Form</title>
+    <style>
+        body {
+            background: #cecece;
+        }
+        form {
+            width: 600px;
+            font-size: 16px;
+            background-color: #182134;
+            margin: 20px auto 0 auto;
+            border-radius: 5px;
+            color: white;
+        }
+        label {
+            display: block;
+            padding: 5px;
+        }
+        legend {
+            text-align: center;
+            font-family: "segoe print";
+            color: #ffffff;
+        }
+        input {
+            border-radius: 5px;
+        }
+        button {
+            width: 100px;
+            margin: 5px 250px 5px;
+        }
+        textarea {
+            padding: 0;
+            margin: 0;
+            width: 567px;
+            height: 50px;
+            max-width: 567px;
+            max-height: 100px;
+        }
+    </style>
+    <body>
+        <form action="" method="post" name="personalInfo">
+            <fieldset>
+                <legend>Personal information</legend>
+                <label for="surname">Surname:
+                <input type="text" name"surname" placeholder="Enter surname" required>
+                </label>
+                <label for="name">Name:
+                <input type="text" name="name" placeholder="Enter name" required>
+                </label>
+                <label for="tel"> Tel:
+                <input type="tel" placeholder="+38(067)123-45-67" required>
+                </label>
+                <label for="year">How old are you:
+                <input type="number" name="year" placeholder="Year" size="3" max="99">
+                </label>
+                <label for="email">Email:
+                <input type="email" name="email" placeholder="Enter your email" required>
+                </label>
+                <label for="password">Password:
+                <input type="password" name="password" placeholder="Enter password" required>
+                </label>
+                <label for="bos">ChekBox:
+                <input type="checkbox" name="bos" required>
+                </label>
+            </fieldset>
+            <fieldset>                
+            <legend>An intresting fact abaut you</legend>
+            <div>
+                <div>Do you love dogs?</div>
+                <div>
+                 <label>
+                     <input type="radio" name="dogs" required>
+                     <span>Yes</span>
+                    </label>
+                    <label>
+                    <input type="radio" name="dogs" required>
+                    <span>Yes</span>
+                </label> 
+                </div>
+                <div>What is you favorite color?</div>
+                <label>
+                    <input type="color" name="color" value="#02f7fd">
+                </label>
+                </div>
+                <div>
+                    <div>What time do you go to bed?</div>
+                    <label>
+                        <input type="time" name="sleep" value="23:00">
+                    </label>
+                </div>
+                <div>
+                <div>What your favorite car?</div>
+                <label>
+                <select multiple name="car" size="3" required>
+                    <option value="VW" selected>VW</option>
+                    <option value="Audi" selected>Audi</option>
+                    <option value="BMW" selected>BMW</option>
+                </select>
+                 </label>   
+                </div>
+                <div>
+                    <div>How do you rate our work</div>
+                    <div>
+                        <label>
+                            <input type="range" name="work" min="0" max="5">
+                        </label>   
+                </fieldset>
+                <fieldset>
+                       <legend>Your comments:</legend>
+                       <textarea name="comments" size="60"></textarea>
+                    </fieldset>
+                    <button type="submit">Submit</button>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </body>
+</html>
